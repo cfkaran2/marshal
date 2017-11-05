@@ -2,5 +2,15 @@
 name = "marshal"
 version = "0.1.0"
 authors = ["Cem Karan <cfkaran2@gmail.com>"]
+exclude = ["/target/", "**/*.rs.bk", "Cargo.lock"]
+description = "The rust equivalent of python pickle; object graph marshaling that Just Works."
+repository = "https://github.com/cfkaran2/marshal"
+readme = "README.md"
+keywords = ["marshal", "serde", "pickle", "yaml"]
+categories = ["data-structures", "encoding", "value-formatting", "", ""]
+license = "Apache-2.0"
+license-file = "LICENSE"
 
 [dependencies]
+lazy_static = ">=0.2.9"
+mut_static = ">=5"
