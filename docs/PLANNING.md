@@ -4,22 +4,15 @@ As stated in [README.md](../README.md), marshal's goal is to be **the**
 [marshalling](https://en.wikipedia.org/wiki/Marshalling_(computer_science))
 library for [rust](https://www.rust-lang.org).  To do that marshal will need to:
 
-    * Handle arbitrary object graphs.  This includes object graphs that have
-      cycles in them.
-    * Handle objects that cannot be serialized. This includes things such as 
-      open file pointers (which may no longer be valid after the object graph 
-      has be unmarshalled).
+    * Handle arbitrary object graphs.  This includes object graphs that have cycles in them.
+    * Handle objects that cannot be serialized. This includes things such as open file pointers (which may no longer be valid after the object graph has be unmarshalled). 
     * Handle malformed input.
-    * Abstract that container format from the objects being marshalled.  The 
-      allows storing the object graph in any format that can handle an object 
-      graph.
+    * Abstract that container format from the objects being marshalled.  The allows storing the object graph in any format that can handle an object graph.
 
 Explicit non-goals of marshal include:
-    * The ability to handle different versions of a format (it's not 
-      [Google Protocol Buffers](https://developers.google.com/protocol-buffers/)).
-    * The ability to serialize to multiple related documents (it's not a 
-      database, a file system, or other multi-document system, although the 
-      backends could serialize to such systems).
+
+    * The ability to handle different versions of a format (it's not [Google Protocol Buffers](https://developers.google.com/protocol-buffers/)). 
+    * The ability to serialize to multiple related documents (it's not a database, a file system, or other multi-document system, although the backends could serialize to such systems).
 
 # Plans
 
